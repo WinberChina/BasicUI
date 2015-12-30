@@ -1,0 +1,44 @@
+/*add custom css*/
+
+.nav-tabs li {
+	background-color: #ccc;
+	margin-right: 1px;
+}
+
+.nav-tabs>li.active {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom-color: transparent
+}
+
+.nav li a {
+	padding: 5px 15px;
+	float: left;
+}
+
+.nav li a:focus,
+.nav li a:hover,
+.nav-tabs li a:focus,
+.nav-tabs li a:hover {
+	border: 0;
+	background-color: #ccc;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+	border: 0;
+}
+
+.navs-close {
+	display: inline-block;
+	margin-top: 8px;
+	margin-right: 8px;
+	width: 9px;
+	height: 9px;
+	background-repeat: no-repeat !important;
+	text-indent: -10000px;
+	outline: none;
+	background-image: url("../img/remove-icon-small.png") !important;
+	float: right;
+}
