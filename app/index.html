@@ -25,6 +25,12 @@
 
 <!-- BEGIN DYMANICLY LOADED CSS FILES(all plugin and page related styles must be loaded between GLOBAL and THEME css files ) -->
 <link id="ng_load_plugins_before"/>
+<link rel="stylesheet" type="text/css" href="../assets/global/plugins/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../assets/global/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css" />
+<link rel="stylesheet" type="text/css" href="../assets/global/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css" />
+<link rel="stylesheet" type="text/css" href="../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
+<link rel="stylesheet" type="text/css" href="../assets/global/plugins/jstree/dist/themes/default/style.min.css" />
 <!-- END DYMANICLY LOADED CSS FILES -->
 
 <!-- BEGIN THEME STYLES -->
@@ -86,7 +92,6 @@
 			<div class="page-content">
 				<!-- BEGIN ACTUAL CONTENT -->
 				<div id="tab-contents" class="fade-in-up">
-
 				</div> 
 				<!-- END ACTUAL CONTENT -->
 			</div>	
@@ -146,6 +151,16 @@
 	<script type="text/javascript" src="../assets/admin/js/demo.js"></script>  
 	<script type="text/javascript" src="../assets/admin/js/tab-auto.js" ></script>
 	<!-- END APP LEVEL JQUERY SCRIPTS -->
+	
+	<!-- BEGIN DATATABLE SCRIPTS -->
+	<script type="text/javascript" src="../assets/global/plugins/select2/select2.min.js"></script>
+	<script type="text/javascript" src="../assets/global/plugins/datatables/all.min.js"></script>
+	<script type="text/javascript" src="js/scripts/components-pickers.js"></script>
+	<script type="text/javascript" src="js/scripts/table-advanced.js"></script>
+	<script type="text/javascript" src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript" src="../assets/global/plugins/jstree/dist/jstree.min.js"></script>
+	<script type="text/javascript" src="js/scripts/tree-modal.js"></script>
+	<script type="text/javascript" src="js/controllers/TableAdvancedController.js"></script>
 
 	<script type="text/javascript">
 		/* Init Metronic's core jquery plugins and layout scripts */
@@ -155,7 +170,7 @@
 			
 			$('body').removeClass('page-on-load'); // remove page loading indicator
             Layout.setSidebarMenuActiveLink('match'); // activate selected link in the sidebar menu
-			openTab('Dashboard', 'views/dashboard.html');
+			// openTab('Dashboard', 'views/dashboard.html');
 		});
 	</script>
 	<!-- END JAVASCRIPTS -->

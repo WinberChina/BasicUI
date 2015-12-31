@@ -23,12 +23,9 @@ var openTab = function(tabName, tabUrl, $compile, $scope) {
 	// console.log($("#tab-nav").html());
 	
 	/*增加tab页关联内容*/
-	var contentTemplate = "<div class='tab-content' data-ng-include=\"'views/dashboard.html'\"></div>";
-	$compile(contentTemplate)($scope);
-	parentDiv.append(contentTemplate);
 	
-	// parentDiv.append("<div id='" + contentId + "' class='tab-content'></div>");
-	// $("#" + contentId).load(tabUrl);
+	parentDiv.append("<div id='" + contentId + "' class='tab-content'></div>");
+	$("#" + contentId).load(tabUrl);
 	console.log(parentDiv.html());
 	
 	/*激活当前tab */

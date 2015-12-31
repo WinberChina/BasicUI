@@ -1,0 +1,46 @@
+[
+	{
+		"id": "0",
+		"text": "Same but with checkboxes",
+		"children": [
+			{
+				"id": "01",
+				"text": "initially selected"
+			}, {
+				"id": "02",
+				"text": "custom icon",
+				"icon": "fa fa-warning icon-state-danger"
+			}, {
+				"id": "03",
+				"text": "initially open",
+				"icon": "fa fa-folder icon-state-default",
+				"state": {
+					"opened": true
+				},
+				"children": [
+					{
+						"id": "030",
+						"text": "Another node",
+						"state": {
+							"selected": true
+						}
+					}
+				]
+			}, {
+				"id": "04",
+				"text": "custom icon",
+				"icon": "fa fa-warning icon-state-warning"
+			}, {
+				"id": "05",
+				"text": "disabled node",
+				"icon": "fa fa-check icon-state-success",
+				"state": {
+					"disabled": true
+				}
+			}
+		]
+	},
+	{	"id": "1",
+		"text": "And wholerow selection"
+	}
+]

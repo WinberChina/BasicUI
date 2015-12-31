@@ -1,5 +1,5 @@
 /* Setup general page controller */
-MetronicApp.controller('TableAdvancedController', ['$rootScope', '$scope', 'settings', '$modal', '$log', '$state', function($rootScope, $scope, settings, $modal, $log, $state) {
+MetronicApp.controller('TableAdvancedController', ['$rootScope', '$scope', 'settings', '$modal', '$log', function($rootScope, $scope, settings, $modal, $log) {
 	$scope.settings = {
 		isFormShow: false
 	};
@@ -16,11 +16,6 @@ MetronicApp.controller('TableAdvancedController', ['$rootScope', '$scope', 'sett
 	//控制查询form显示
 	$scope.toggleForm = function() {
 		$scope.settings.isFormShow = !$scope.settings.isFormShow;
-	}
-
-	// 跳转新增页面
-	$scope.addNew = function() {
-		openTab('Product Edit', 'productsedit', $state);
 	}
 
 	$scope.items = ['item1', 'item2', 'item3'];
@@ -46,18 +41,3 @@ MetronicApp.controller('TableAdvancedController', ['$rootScope', '$scope', 'sett
 
 
 }]);
-
-MetronicApp.controller('ModalInstanceCtrl', function($scope, $modalInstance, items) {
-	$scope.items = items;
-	$scope.selected = {
-		item: $scope.items[0]
-	};
-
-	$scope.ok = function() {
-		$modalInstance.close($scope.selected.item);
-	};
-
-	$scope.cancel = function() {
-		$modalInstance.dismiss('cancel');
-	};
-});

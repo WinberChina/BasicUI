@@ -63,3 +63,14 @@ MetronicApp.directive('dropdownMenuHover', function () {
     }
   };  
 });
+
+// Create Tree Directive
+MetronicApp.directive('ngTreeUrl', function() {
+	return {
+		link: function(scope, element, attrs) {
+			element.on('click', function(e) {
+				scope.treeModal(attrs.ngTreeUrl);
+			})
+		}
+	}
+})
